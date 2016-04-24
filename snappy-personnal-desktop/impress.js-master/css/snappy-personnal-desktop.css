@@ -1,0 +1,829 @@
+/* General parameters */
+
+    body {
+        font-family: Ubuntu, sans-serif;
+        /*min-height: 740px;*/
+        background: #f7f7f7;
+    }
+
+    div {
+        margin: 0px 0px 0px 0px;
+    }
+    
+    p {
+        color: #000;
+    }
+    
+    code {
+        font-family: 'Ubuntu Mono', sans-serif;
+        background: #efefef;
+        color: #333333;
+    }
+    
+    code, pre {
+        font-family: "Ubuntu Mono", "Consolas", "Monaco", "Lucida Console", "Courier New", Courier, monospace;
+    }
+    
+    dl {
+    
+        color: #000;
+    }
+
+    li {
+        color: #000;
+    }
+
+    li.highlight {
+        transform: translateZ(20px);
+    }
+
+    li.non-highlight {
+
+        display: block;
+        opacity: .25;
+
+    }
+    
+    blockquote {
+
+        font-style: italic;
+        color: #000
+    }
+
+    blockquote.pull-quote p {
+        font-size: 45px;
+    } 
+
+    blockquote.pull-quote p cite {
+        font-size: 40px;
+        text-decoration: underline;
+        padding-left: 940px;
+    }
+
+    blockquote span {
+        color: #E95420;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #e95420;
+        text-shadow: none;
+        background-color: transparent;
+    }
+  
+    .chevron {
+    
+        font-weight: bolder;
+        color: #e95420;
+    }
+    
+    .error {
+    
+        font-style: italic;
+        color: red;
+    }    
+
+    .good {
+        font-style: italic;
+        color: green;
+    }
+
+    .step {
+        background: url("img/image-background-paper.png") repeat-y center top #f7f7f7;
+        position: relative;
+        width: 1280px;
+        padding: 40px;
+        margin: 20px auto;
+        min-height: 720px;
+    
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing:    border-box;
+        -ms-box-sizing:     border-box;
+        -o-box-sizing:      border-box;
+        box-sizing:         border-box;
+   
+        font-size: 48px;
+        line-height: 1.5;
+        font-family: Ubuntu, sans-serif;
+    }
+    
+    .step .notes {
+      display: none;
+    }
+
+    .step:not(.active) {
+            
+        opacity: 0;
+            
+        -webkit-transition: opacity 1s;
+        -moz-transition:    opacity 1s;
+        -ms-transition:     opacity 1s;
+        -o-transition:      opacity 1s;
+        transition:         opacity 1s;
+    }
+
+    .title-slide {
+      width: 1280px;
+      font-family: Ubuntu, sans-serif;
+      color: #fff;
+      background-color: #e95420;
+      margin-top: -50px;
+      margin-left: -40px;
+    }
+
+    .left {
+        float: left;
+        padding-left: 50px;
+    }
+
+    .right {
+        float: right;
+    }
+    
+    .box {
+        border: 1px solid #dfdcd9;    
+    }
+
+    .box-highlight {
+        -moz-box-shadow: 0 2px 2px 0 #c2c2c2;
+        -webkit-box-shadow: 0 2px 2px 0 #c2c2c2;
+        box-shadow: 0 2px 2px 0 #c2c2c2;
+        border: 1px solid #f7f7f7;
+    }
+
+    /* General slide */
+
+        /* title-part-slide */
+
+            .title-part-slide {
+                background: #e95420;
+            }
+
+            .title-part-slide h2 {
+                font-size: 50px;
+                color: #fff;
+                margin-top: 250px;
+                margin-left: 100px;
+            }
+
+        /* generic-slide */
+
+            .generic-slide {
+                background: url("img/image-background-paper.png") repeat-y center top #f7f7f7;
+            }
+
+            .generic-slide .titre-slide {
+                margin-top: -40px;
+                margin-left: -40px;
+                background-color: #E95420;
+                width: 1280px;
+                color: #fff;
+                font-weight: lighter;
+            }
+
+            .generic-slide h2 {
+                font-size: 50px;
+                padding-left: 40px;
+            }
+
+            .generic-slide .content {
+                padding-top: 100px;
+            }
+
+            .generic-slide img {
+                transform: rotate(-2.5deg);
+            }
+
+            .generic-slide .content h3 {
+                text-decoration: underline;
+                font-size: 50px;
+            }
+
+            .generic-slide .content h4 {
+                font-weight: bold;
+                font-size: 40px;
+                padding-top: 50px;
+            }
+
+            .generic-slide .content p {
+                padding-top: 20px;
+                font-size: 30px;
+                padding-left: 20px;
+            }
+
+            .generic-slide .content li {
+                padding-top: 20px;
+                font-size: 30px;
+                padding-left: 20px;
+            }
+
+        /* trollface-slide */
+
+            .trollface-slide .content {
+                padding-top: 150px;
+            }
+
+            .trollface-slide img {
+                padding-left: 150px;
+            }
+
+            .trollface-slide .bulle {
+                margin-left: -100px;
+            }
+
+            .trollface-slide blockquote.pull-quote p cite {
+                padding-left: 450px;
+            }
+
+/* TITLE */
+
+    .impress-on-title .step:not(.active) {
+        opacity: 0;
+    
+        -webkit-transition: opacity 1s;
+        -moz-transition:    opacity 1s;
+        -ms-transition:     opacity 1s;
+        -o-transition:      opacity 1s;
+        transition:         opacity 1s;
+    }
+    
+    #title {
+        background: #e95420;  
+    }
+    
+    #title h1 {
+        color: #fff;
+        font-size: 80px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+        margin-left: 150px;
+        margin-top: 250px;
+    }
+
+    #title .subtitle {
+    	font-size: 50px;
+    	color: #333333;
+        margin-left: 120px;
+        margin-bottom: 50px;
+    }
+    
+    #title .signature {
+        font-size: 20px;
+        color: #ffffff;
+        text-align: right;
+        margin-right: 100px;
+        margin-top: 100px;    
+    }
+
+/* Part 1 - Présentation */
+
+    .impress-on-presentation .step:not(.active) {
+            
+            opacity: 0;
+            
+            -webkit-transition: opacity 1s;
+            -moz-transition:    opacity 1s;
+            -ms-transition:     opacity 1s;
+            -o-transition:      opacity 1s;
+            transition:         opacity 1s;
+        }
+
+    #presentation {
+
+        background: url("img/image-background-paper.png") repeat-y center top #f7f7f7;
+
+    }
+
+    #presentation .titre-slide {
+
+        margin-top: -40px;
+        margin-left: -40px;
+        background-color: #E95420;
+        width: 1280px;
+        color: #fff;
+        font-weight: lighter;
+    }
+
+    #presentation h2 {
+    
+        font-size: 50px;
+        padding-left: 40px;
+        /*color: #333;*/
+        /*color: #e95420;*/
+
+        /*margin-left: 50px;*/
+
+        
+    }
+
+    #presentation .content {
+        padding-top: 100px;
+    }
+
+    #presentation ul {
+        font-size: 40px;
+    }
+
+    #presentation li {
+        padding-top: 20px;
+    }
+
+    #presentation dt {
+
+        font-size: 30px;
+        font-weight: light;
+        margin-top: 20px;
+        margin-left: 50px;
+
+    }
+
+    #presentation dd {
+
+        font-size: 25px;
+        font-style: italic;
+        margin-top: 10px;
+        margin-left: 150px;
+
+    }
+
+    #presentation .prez {
+        font-size: 30px;
+    }
+
+    #presentation .rs {
+        padding-left: 50px;
+        padding-top: 0px;
+    }
+
+    #presentation .rs i {
+        vertical-align: 30px;
+        font-size: 30px;
+    }
+
+/* Part 2 - Canonical ne s'interresse plus au poste de travail */
+
+        /* canonicalnesinterresseplusaupostedetravail */
+    
+        .impress-on-canonicalnesinterresseplusaupostedetravail .step:not(.active) {
+            
+            opacity: 0;
+            
+            -webkit-transition: opacity 1s;
+            -moz-transition:    opacity 1s;
+            -ms-transition:     opacity 1s;
+            -o-transition:      opacity 1s;
+            transition:         opacity 1s;
+        }
+
+        #canonicalnesinterresseplusaupostedetravail {
+
+            background: url("img/image-background-paper.png") repeat-y center top #f7f7f7;
+
+            -webkit-transition: background 1s;
+            -moz-transition:    background 1s;
+            -ms-transition:     background 1s;
+            -o-transition:      background 1s;
+            transition:         background 1s;
+                
+        }
+
+        #canonicalnesinterresseplusaupostedetravail .content {
+
+            padding-top: 100px;
+        }
+
+        #canonicalnesinterresseplusaupostedetravail .left {
+
+            margin-right: -300px;
+            margin-top: -50px; 
+        }
+
+        #canonicalnesinterresseplusaupostedetravail .bulle:before {
+
+            content: " ";
+            background-image: url(img/pictogram-quote-orange-hex.svg); 
+            background-repeat: no-repeat;
+            background-position-x: 500px; 
+            background-size: 500px;
+
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: “FlipH”;
+        }
+
+        #canonicalnesinterresseplusaupostedetravail blockquote {
+
+            -moz-transform: scaleX(1);
+            -o-transform: scaleX(1);
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            filter: FlipH;
+            -ms-filter: “FlipH”;
+
+        }
+
+/* Part 3 - Un peu d'Histoire */
+
+    /* unpeudhistoire */
+
+        .impress-on-unpeudhistoire .step:not(.active) {
+            
+            opacity: 0;
+            
+            -webkit-transition: opacity 3s;
+            -moz-transition:    opacity 3s;
+            -ms-transition:     opacity 3s;
+            -o-transition:      opacity 3s;
+            transition:         opacity 3s;
+        }
+
+        #unpeudhistoire {
+            background-color: #E95420;
+
+            -webkit-transition: background-color 1s;
+            -moz-transition:    background-color 1s;
+            -ms-transition:     background-color 1s;
+            -o-transition:      background-color 1s;
+            transition:         background-color 1s;
+        }
+
+    /* unpeudhistoire-lancementdubuntu */
+
+        #unpeudhistoire-lancementdubuntu .content {
+            padding-top: 100px;
+        }
+
+        #unpeudhistoire-lancementdubuntu img {
+            transform: rotate(-2.5deg);
+        }
+
+        #unpeudhistoire-lancementdubuntu dd {
+            font-weight: bold;
+        }
+
+        #unpeudhistoire-lancementdubuntu dt {
+            font-size: 32px;
+            padding-left: 20px;
+        }
+
+    /* unpeudhistoire-404releasenontrouvee */
+
+        #unpeudhistoire-404releasenontrouvee h3 {
+            font-size: 75px;
+        }        
+
+        #unpeudhistoire-404releasenontrouvee .content {
+
+            padding-top: 150px;
+        }
+
+    /* unpeudhistoire-versionserveur */
+
+        #unpeudhistoire-versionserveur .content {
+            padding-top: 100px;
+        }
+
+        #unpeudhistoire-versionserveur .box {
+            background-color: transparent;
+            padding: 0px;
+        }
+
+        #unpeudhistoire-versionserveur img {
+            transform: rotate(-2.5deg);
+            margin-left: 100px;
+        }
+
+        #unpeudhistoire-versionserveur h3 {
+            text-decoration: underline;
+        }
+
+        #unpeudhistoire-versionserveur ul {
+            font-size: 45px;
+            padding-left: 20px;
+        }
+
+    /* unpeudhistoire-versionserveur-landscape */
+
+        #unpeudhistoire-versionserveur-landscape h3 {
+            text-decoration: underline;
+        }
+
+        #unpeudhistoire-versionserveur-landscape p {
+            font-size: 40px;
+            padding-left: 20px;
+        }
+
+        #unpeudhistoire-versionserveur-landscape .content {
+            padding-top: 150px;
+        }
+
+        #unpeudhistoire-versionserveur-landscape .box {
+            background-color: transparent;
+            padding: 0px;
+        }
+
+        #unpeudhistoire-versionserveur-landscape img {
+            transform: rotate(0deg);
+            margin-top: 50px;
+        }
+
+
+
+    /* unpeudhistoire-versionserveur-juju */
+
+        #unpeudhistoire-versionserveur-juju h3 {
+            text-decoration: underline;
+        }
+
+        #unpeudhistoire-versionserveur-juju p {
+            font-size: 40px;
+            padding-left: 20px;
+        }
+
+        #unpeudhistoire-versionserveur-juju .content {
+            padding-top: 150px;
+        }
+
+        #unpeudhistoire-versionserveur-juju .box {
+            background-color: transparent;
+            padding: 0px;
+        }
+
+        #unpeudhistoire-versionserveur-juju img {
+            transform: rotate(0deg);
+        }
+
+    /* unpeudhistoire-versionserveur-maas */
+
+        #unpeudhistoire-versionserveur-maas h3 {
+            text-decoration: underline;
+        }
+
+        #unpeudhistoire-versionserveur-maas p {
+            font-size: 30px;
+            padding-left: 20px;
+        }
+
+        #unpeudhistoire-versionserveur-maas .content {
+            padding-top: 100px;
+        }
+
+        #unpeudhistoire-versionserveur-maas .box {
+            background-color: transparent;
+            padding: 0px;
+        }
+
+        #unpeudhistoire-versionserveur-maas img {
+            transform: rotate(0deg);
+        }
+
+    /* unpeudhistoire-versionnetbook-unr-une */
+
+        #unpeudhistoire-versionnetbook-unr-une h3 {
+            text-decoration: underline;
+        }
+
+        #unpeudhistoire-versionnetbook-unr-une p {
+            font-size: 30px;
+            padding-left: 20px;
+        }
+
+        #unpeudhistoire-versionnetbook-unr-une .content {
+            padding-top: 100px;
+        }
+
+        #unpeudhistoire-versionnetbook-unr-une #imgunr:hover {
+            transform: rotate(5deg);
+        }
+
+        #unpeudhistoire-versionnetbook-unr-une #imgune {
+            transform: rotate(2.5deg);
+            margin-top: -250px;
+            margin-left: 250px;
+        }
+
+        #unpeudhistoire-versionnetbook-unr-une #imgune:hover {
+            transform: rotate(-5deg);
+            margin-top: -250px;
+            margin-left: 250px;
+        }
+
+    /* unpeudhistoire-311011-annoncesmartphonetabletiot */
+
+        #unpeudhistoire-311011-annoncesmartphonetabletiot .box {
+            padding: 0px;
+        }
+
+        #unpeudhistoire-311011-annoncesmartphonetabletiot .pull-quote p {
+            color: #000;
+            padding-top: 50px;
+        }
+
+        #unpeudhistoire-311011-annoncesmartphonetabletiot .pull-quote p cite {
+            padding-left: 750px;
+            font-size: 30px;
+            margin-top: -20px;
+        }        
+
+    /* convergence-mobile-pc */
+
+        #convergence-mobile-pc .box {
+            margin-top: 75px;
+        }
+
+        #convergence-mobile-pc .last-col {
+            margin-left: -50px;
+        }
+
+        #convergence-mobile-pc h3 {
+            padding-left: 0px;
+            font-size: 35px;
+        }
+
+    /* convergence-continuum */
+
+        #convergence-continuum .box {
+            background-color: transparent;
+        }
+
+        #convergence-continuum img {
+            transform: rotate(0deg);
+            padding-top: 75px;
+            padding-left: 30px;
+        }
+
+        #convergence-continuum h3 {
+            font-size: 40px;
+            padding-top: 25px;
+        }
+
+    /* convergence-continuity */
+
+        #convergence-continuity .box {
+            background-color: transparent;
+        }
+
+        #convergence-continuity img {
+            transform: rotate(0deg);
+            padding-top: 75px;
+            padding-left: 30px;
+        }
+
+        #convergence-continuity h3 {
+            font-size: 35px;
+            padding-top: 25px;
+        }
+
+        #convergence-continuity .last-col {
+            margin-left: -30px;
+        }
+
+    /* convergence-mx10 */
+
+        #convergence-mx10 .box {
+            background-color: transparent;
+        }
+
+        #convergence-mx10 .content {
+            padding-top: 50px;
+        }
+
+        #convergence-mx10 img {
+            transform: rotate(0deg);
+            padding-top: 75px;
+            padding-left: 30px;
+        }
+
+        #convergence-mx10 h3 {
+            font-size: 35px;
+            padding-top: 25px;
+        }
+
+    /* convergence-developpeur */
+
+        #impress-on-convergence-developpeur .step:not(.active) {
+            opacity: 0;
+
+            -webkit-transition: opacity 2s;
+            -moz-transition:    opacity 2s;
+            -ms-transition:     opacity 2s;
+            -o-transition:      opacity 2s;
+            transition:         opacity 2s;
+
+        }
+
+        #convergence-developpeur h3 {
+            font-size: 35px;
+        }
+
+    /* convergence-developpement-simplifié */
+
+        #convergence-developpement-simplifie h2 {
+            font-size: 40px;
+        }
+
+        #convergence-developpement-simplifie h3 {
+            font-size: 35px;
+        }
+
+        #convergence-developpement-simplifie .box {
+            padding: 10px;
+        }
+
+        #convergence-developpement-simplifie #frigo {
+            margin-left: 30px;
+        }
+
+        #convergence-developpement-simplifie #drone {
+            margin-left: 30px;
+            margin-top: 100px; 
+        }
+
+        #convergence-developpement-simplifie #tablet {
+            transform: rotate(-2.5deg);
+            margin: 30px 0 0 600px; 
+        }
+
+        #convergence-developpement-simplifie #phone {
+            transform: rotate(10deg);
+            margin: 0px 0 0 200px; 
+        }
+
+        #convergence-developpement-simplifie #switch {
+            transform: rotate(-5deg);
+            margin: 0px 0 0 800px; 
+            display: block;
+        }
+
+        #convergence-developpement-simplifie #robot {
+            transform: rotate(15deg);
+            margin: 0px 0 0 500px; 
+            display: block;
+        }
+
+
+
+
+
+/* Part 2 - Qu'est-ce que Snappy ? */
+
+    /* questcequesnappy */
+
+        .impress-on-questcequesnappy .step:not(.active) {
+            
+            opacity: 0;
+            
+            -webkit-transition: opacity 1s;
+            -moz-transition:    opacity 1s;
+            -ms-transition:     opacity 1s;
+            -o-transition:      opacity 1s;
+            transition:         opacity 1s;
+        }
+
+   
+
+    /* questcequesnappy-description */
+    
+        .impress-on-questcequesnappy-description .step:not(.active) {
+            
+            opacity: 0;
+            
+            -webkit-transition: opacity 1s;
+            -moz-transition:    opacity 1s;
+            -ms-transition:     opacity 1s;
+            -o-transition:      opacity 1s;
+            transition:         opacity 1s;
+        }
+
+        #questcequesnappy-description {
+
+            background: url("img/image-background-paper.png") repeat-y center top #f7f7f7;
+                
+        }
+
+        #questcequesnappy-description h2 {
+    
+            font-size: 50px;
+            color: #fff;
+            margin-top: 10px;
+            margin-left: 50px;
+        
+        }
+
+        #questcequesnappy-description ul {
+
+            font-size: 45px;
+            padding-top: 200px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        #questcequesnappy-description li {
+
+            display: block;
+            margin-top: 30px;
+        }
+

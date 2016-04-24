@@ -1,0 +1,370 @@
+
+
+/* ubuntu-est-partout */
+
+    .impress-on-ubuntu-est-partout {
+	    background: #fff;
+    }
+
+    #ubuntu-est-partout img {
+	    padding-top: 100px;
+    }
+
+    #ubuntu-est-partout p {
+        font-size: 120px;
+        padding-left: 125px;
+        margin-top: -75px;
+        font-weight: lighter;
+    }
+
+/* plus-de-gens-utilisent-ubuntu */
+
+	.impress-on-plus-de-gens-utilisent-ubuntu {
+		background: #2C001E;
+
+		-webkit-transition: background 1s;
+		-moz-transition: background 1s;
+		-ms-transition: background 1s;
+		-o-transition: background 1s;
+		transition: background 1s;
+
+	}
+
+    #plus-de-gens-utilisent-ubuntu p {
+    	color: #e95420;
+    	padding-top: 200px;
+    	text-align: center;
+    }
+
+/* people-use-ubuntu */
+
+    .impress-on-people-use-ubuntu {
+    	background: #2C001E;
+    }
+
+    #people-use-ubuntu img {
+    	padding-top: 100px;
+    	padding-left: 250px;
+    }
+
+    #people-use-ubuntu p {
+    	color: #fff;
+    	font-size: 40px;
+    	padding-top: 50px;
+    	text-align: center;
+    }
+
+/* hundred-of-millions */
+
+    .impress-on-hundred-of-millions {
+    	background: #2C001E;
+    }
+
+    #hundred-of-millions img {
+    	padding-top: 75px;
+    	padding-left: 100px;
+    }
+
+    #hundred-of-millions p {
+    	color: #fff;
+    	font-size: 40px;
+    	padding-top: 0px;
+    	text-align: center;
+    }
+
+/* in-the-cloud */
+
+    .impress-on-in-the-cloud {
+    	background: #fff;
+
+    	-webkit-transition: background 1s;
+		-moz-transition: background 1s;
+		-ms-transition: background 1s;
+		-o-transition: background 1s;
+		transition: background 1s;
+    }
+
+    #in-the-cloud {
+    	background: url("../img/cloud-image-1.svg") no-repeat center #fff;
+
+    	-webkit-transition: background 1s;
+		-moz-transition: background 1s;
+		-ms-transition: background 1s;
+		-o-transition: background 1s;
+		transition: background 1s;
+    }
+
+    #in-the-cloud img {
+    	padding-top: 75px;
+    	padding-left: 100px;
+    }
+
+    #in-the-cloud p {
+    	color: #e95420;
+    	font-size: 40px;
+    	padding-top: 0px;
+    	text-align: center;
+    }
+
+/* soixantemillions */
+
+    .impress-on-soixantemillions {
+    	background: #fff;
+
+    	-webkit-transition: background 1s;
+		-moz-transition: background 1s;
+		-ms-transition: background 1s;
+		-o-transition: background 1s;
+		transition: background 1s;
+    }
+
+    .impress-on-soixantemillions #in-the-cloud.step:not(.active) {
+    	opacity: 1;
+    }
+
+    #soixantemillions .cloud {
+    	background: url("../img/cloud-image-1.svg");
+    	background-repeat: no-repeat;
+        background-position: center; 
+        background-color: #fff;
+        background-size: 550px; 
+
+    	-webkit-transition: background 1s;
+		-moz-transition: background 1s;
+		-ms-transition: background 1s;
+		-o-transition: background 1s;
+		transition: background 1s;
+    }
+
+    #soixantemillions img {
+    	padding-top: 150px;
+    	padding-left: 250px;
+    	margin-bottom: 150px;
+    	margin-left: 25px;
+    }
+
+    #soixantemillions p {
+    	color: #e95420;
+    	font-size: 40px;
+    	margin-top: -75px;
+    	text-align: center;
+    }
+
+/* quatorzemillions */
+
+    .impress-on-quatorzemillions {
+    	background: #fff;
+    }
+
+    .impress-on-quatorzemillions #soixantemillions.step:not(.active) {
+    	opacity: 1;
+    }
+
+    #quatorzemillions .cloud {
+    	background: url("../img/cloud-image-1.svg");
+    	background-repeat: no-repeat;
+        background-position: center; 
+        background-color: #fff;
+        background-size: 550px; 
+
+    	-webkit-transition: background 1s;
+		-moz-transition: background 1s;
+		-ms-transition: background 1s;
+		-o-transition: background 1s;
+		transition: background 1s;
+    }
+
+    #quatorzemillions img {
+    	padding-top: 150px;
+    	padding-left: 250px;
+    	margin-bottom: 150px;
+    	margin-left: 25px;
+    }
+
+    #quatorzemillions p {
+    	color: #e95420;
+    	font-size: 40px;
+    	margin-top: -75px;
+    	text-align: center;
+    }
+
+/* vingtmillionsinstances */
+
+    .impress-on-vingtmillionsinstances {
+    	background: #fff;
+    }
+
+    #vingtmillionsinstances img {
+    	padding-top: 20px;
+    }
+
+    .vingtmillions p {
+    	color: #e45920;
+    	font-size: 120px;
+    	margin-top: -50px;
+    }
+
+    .instancesubuntu p {
+    	margin-top: -130px;
+    	line-height: 90%;
+    	font-size: 60px;
+    }
+
+    .cloud-title p {
+    	font-weight: bold;
+    	font-size: 30px;
+    }
+
+    .cloud-description p {
+    	font-size: 20px;
+    }
+
+    .impress-on-vingtmillionsinstances-2 {
+    	background: #fff;
+    }
+
+    .impress-on-vingtmillionsinstances-2 .entete-vingtmillions.step:not(.active) {
+    	opacity: 1;
+    }
+
+    #vingtmillionsinstances-2 img {
+    	padding-top: 20px;
+    }
+
+    .impress-on-vingtmillionsinstances-3 .entete-vingtmillions.step:not(.active) {
+    	opacity: 1;
+    }
+
+    #vingtmillionsinstances-3 img {
+    	padding-top: 20px;
+    }
+
+/* theresaloplenty */
+
+    .impress-on-theresaloplenty {
+    	background: #fff;
+    }
+
+    #theresaloplenty p {
+    	color: #2C001E;
+    	padding-left: 10px;
+    	padding-top: 250px; 
+    }
+
+/* kubernetes */
+
+    .impress-on-kubernetes {
+   		background: #fff;
+    } 
+
+    #kubernetes img {
+    	padding-top: 150px;
+    	padding-left: 250px;
+    }
+
+    #kubernetes p {
+    	padding-left: 100px;
+    }
+
+/* cloudfoundry */
+
+    .impress-on-cloudfoundry {
+   		background: #fff;
+
+   		-webkit-transition: background 2s;
+   		-moz-transition: background 2s;
+   		-ms-transition: background 2s;
+   		-o-transition: background 2s;
+   		transition: background 2s;
+    } 
+
+    #cloudfoundry img {
+    	padding-top: 150px;
+    	padding-left: 250px;
+    }
+
+    #cloudfoundry p {
+    	padding-left: 100px;
+    }
+
+/* Look at the stars */
+
+    .impress-on-look-at-the-stars {
+    	background: url(../img/starredsky.png) repeat #2C001E;
+        background-size: 1600px;
+        /*background-position-x: -130px;*/
+        background-position-y: 200px;
+
+      	-webkit-transition: background 3s;
+    	-moz-transition: background 3s;
+    	-ms-transition: background 3s;
+    	-o-transition: background 3s;
+    	transition: background 3s;	
+    }
+
+    #look-at-the-stars p {
+    	color: #e95420;
+
+        -webkit-transition: color 5s;
+        -moz-transition: color 5s;
+        -ms-transition: color 5s;
+        -o-transition: color 5s;
+        transition: color 5s;    
+
+        padding-top: 250px;
+        padding-left: 150px;
+
+        -webkit-transition: padding 5s;
+        -moz-transition: padding 5s;
+        -ms-transition: padding 5s;
+        -o-transition: padding 5s;
+        transition: padding 5s;    
+
+        opacity: 1;
+
+        -webkit-transition: padding 5s;
+        -moz-transition: padding 5s;
+        -ms-transition: padding 5s;
+        -o-transition: padding 5s;
+        transition: padding 5s;                 
+    }
+
+/* Ubuntu running within the ISS */
+
+    .impress-on-running-within-the-iss {
+    	background: url(../img/starredsky.png) repeat #2C001E;
+        background-size: 1600px;
+        /*background-position-x: -130px;*/
+        background-position-y: 200px;
+
+      	-webkit-transition: background 2s;
+    	-moz-transition: background 2s;
+    	-ms-transition: background 2s;
+    	-o-transition: background 2s;
+    	transition: background 2s;	
+
+    }
+
+    #running-within-the-iss {
+    	opacity: 1
+
+    	-webkit-transition: opacity 4s;
+    	-moz-transition: opacity 4s;
+    	-ms-transition: opacity 4s;
+    	-o-transition: opacity 4s;
+    	transition: opacity 4s;
+    }
+
+    #running-within-the-iss img {
+    	margin-left: -250px;
+        margin-top: 30px;
+    }
+
+    #running-within-the-iss p {
+    	color: #fff;
+        margin-top: -225px;
+        margin-left: 100px;
+    }
+
+
+   
